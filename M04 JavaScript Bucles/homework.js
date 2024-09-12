@@ -127,10 +127,8 @@ function estaEnRango(num) {
    // De lo contrario, retornar false.
    // Tu código:
 
-if (num < 50 && num > 20) {
-return true;
-} 
-   else false;
+   return (num < 50 && num > 20);
+
 }
 
 function esEntero(num) {
@@ -140,10 +138,8 @@ function esEntero(num) {
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna false.
    // Tu código:
- if (num < 0) {
-  return true; num = num * -1; 
- } else false;
-}
+   return Number.isInteger(num);
+   }
 
 function fizzBuzz(num) {
    // Si "num" es divisible entre 3, retorna "fizz".
@@ -175,17 +171,17 @@ function operadoresLogicos(num1, num2, num3) {
       case num3 > num2 && num3 > num1:
          return ++num3;
       case num1  == 0 && num2 == 0 && num3 == 0:
-         return "error";
+         return "Error";
       default:
-         return "false"
+         return false
       }
 
  //  if (true) {
  //  if (num1 > num2 && num1 > num3 && num1 >0) return "Numero 1 es mayor y positivo";
  //  if (num1 <0 || num2 < 0 || num3 < 0) return "Hay negativos";
 //   if (num3 > num2 && num3 > num1) return ++num3;
-//   if (num1 === 0 && num2 === 0 && num3 === 0) return "error";
-//   else return "false"
+//   if (num1 === 0 && num2 === 0 && num3 === 0) return "Error";
+//   else return false
 //}
 
 }
@@ -201,7 +197,7 @@ function esPrimo(num) {
    if (num < 2) return false;
 
    for (var i = 2; i < num; i++) {
-      if (num %i === 0); {
+      if (num %i === 0) {
          return false;
       }   
    }
