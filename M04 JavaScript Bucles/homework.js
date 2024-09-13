@@ -108,9 +108,7 @@ function esDiezOCinco(num) {
    // De lo contrario, retornar false.
    // Tu código:
 
-   {
      return num === 10 || num === 5;
-   }
     
    // opcion 1:
    //if (num === 10 || num === 5 ) {
@@ -209,21 +207,24 @@ function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
-   if (valor) {
-      return "Soy verdadero";
-   } else {
-      return "Soy falso";
-}
+   // if (valor) {
+   //    return "Soy verdadero";
+   // } else {
+   //    return "Soy falso";
+   // }
+   
+   // si se da con operador ternario
+   return valor ? "Soy verdadero" : "Soy falso";
+
 }
 
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
    // Tu código:
-   if (num >= 100 && num <= 999) {
-      return true;
-} return false;
-
+      if (num >= 100 && num <= 999) {
+         return true;
+   } return false;
 }
 
 function doWhile(num) {
@@ -239,7 +240,6 @@ function doWhile(num) {
 
    return num; 
 } 
-
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
